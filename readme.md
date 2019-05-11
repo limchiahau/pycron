@@ -19,7 +19,7 @@ Please make sure to replace:
 
 2. path_to_pycron with the path where pycron is located.
 
-`0 * * * * {username} python '{path_to_pycron}/main.py'`
+`0 * * * * {path_to_pycron}/main.py`
 
 Than delete all existings lines from the cron_jobs file.
 
