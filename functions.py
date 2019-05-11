@@ -2,10 +2,9 @@ import pandas as pd
 import os
 import inspect
 
-# return the commands that are to be executed as a panda Series.
+# return the commands that are to be executed as a list.
 def get_commands(cron_file_uri):
-    commands = read_lines(cron_file_uri)
-    return pd.Series(commands)
+    return read_lines(cron_file_uri)
 
 # returns a list of string that represents each line in a file.
 # The file is derived from the given uri.

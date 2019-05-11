@@ -20,7 +20,8 @@ commands = get_commands(cron_file)
 
 # execute the given commands.
 # assigns a list of tuples that contain (error_code, command_string).
-code = commands.apply(lambda command: (os.system(command), command))
+# code = commands.apply(lambda command: (os.system(command), command))
+code = [(os.system(cmd), cmd) for cmd in commands]
 
 # log all codes. 
 logging.basicConfig(filename=log_file ,level=logging.INFO)

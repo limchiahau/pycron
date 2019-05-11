@@ -5,6 +5,10 @@ Pycron is a cron job scheduler written in python.
 The advantage over just plain old cron is that the results of running the commands will be logged into a log file.
 That is located in the pycron folder.
 
+## Requirements
+
+1. Python 3.6 >
+
 ## Setup
 
 To setup pycron you will first have to add an entry to your cron file. Enter the following lines into the terminal.
