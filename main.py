@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from functions import *
 import logging
 import os
