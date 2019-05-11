@@ -9,7 +9,7 @@ That is located in the pycron folder.
 
 To setup pycron you will first have to add an entry to your cron file. Enter the following lines into the terminal.
 
-[code]crontab -e[code]
+`crontab -e`
 
 Than paste the following line at the end.
 
@@ -19,7 +19,9 @@ Please make sure to replace:
 
 2. path_to_pycron with the path where pycron is located.
 
-[code]0 * * * * {username} python '{path_to_pycron}/main.py'[code]
+`0 * * * * {username} python '{path_to_pycron}/main.py'`
+
+Than delete all existings lines from the cron_jobs file.
 
 ## Create new cron jobs
 
